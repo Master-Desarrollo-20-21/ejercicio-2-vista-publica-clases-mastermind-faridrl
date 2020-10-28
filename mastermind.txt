@@ -1,0 +1,38 @@
+
+@startuml
+
+
+Class MasterMind{
++void play()
++void quit()
+} 
+
+Class Game{
+- int attempts
+- Combination secretCombination
+- Combination requestCombination()
+}
+
+Class Combination{
+-generateRandom()
+-void displayResuts()
++evaluate(Combination combination)
+}
+
+enum Color {
+r
+b
+y
+g
+o
+p
+}
+
+
+MasterMind *-- Game
+Game "1" *-- "many" Combination
+Combination "1" *-- "4" Color
+
+
+
+@enduml
