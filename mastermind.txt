@@ -14,7 +14,7 @@ Class Game{
 }
 
 Class Combination{
--generateRandom()
+-Color[] generateRandom()
 -void displayResuts()
 +evaluate(Combination combination)
 }
